@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- <title>USing Plain HTML using pug </title> -->
+ <!-- <title> #{title}</title> -->
+ <title>Gym Form</title>
+ style
+     include ../static/style.css
+
+</head>
+<body>
+     <nav>
+          <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="/">About</a></li>
+               <li><a href="/">Cotact Us</a></li>
+          </ul>
+     </nav>
+<div class="container">
+<h2>The Place Beyond The Pines</h2>
+<h2>Get membership for 60$</h2>
+<!-- <p>
+     | #{content}
+     |  This is a plain html using pug.
+</p> -->
+
+<form action="/" id="contact" method="POST">
+          <!-- <label class="label" for="name">Name</label> -->
+              <input class="input" type="text" name="myName" id="name" placeholder="Name">
+          <!-- <label class="label" for="age">Age</label> -->
+          <div>
+              <input class="input" type="text" name="myAge" placeholder="Age">
+          </div>
+          <!-- <label class="label" for="email">E-Mail</label> -->
+          <div>
+              <input class="input" type="email" name="myEmail" placeholder="E-Mail">
+          </div>
+          <!-- <label class="label" for="date">Date</label> -->
+          <div>
+              <input class="input" type="date" name="myDate" >
+          </div>
+          <label class="label" for="Are you eligible?">Are you eligible?</label>
+          <div>
+              <input class="input" type="checkbox" name="myEligibility" id="Are you eligible?" checked>
+          </div>
+          <!-- <label for="gender">Gender</label>
+          <div>
+              <span>M</span> <input class="radio" type="radio" name="myGender"> 
+              <span>F</span> <input class="radio" type="radio" name="myGender"> 
+              <span>O</span>  <input class="radio" type="radio" name="myGender">
+          </div> -->
+          <!-- <label for="about">Write about yourself:</label> -->
+          <div>
+            //-   <textarea class="input" name="myText" cols="92" rows="3" placeholder="Write about yourself:"></textarea>
+          </div>
+          <!-- <label for="address">Address</label> -->
+          <div>
+              <textarea class="input" name="myAddress" cols="92" rows="2" placeholder="Address"></textarea>
+          </div>
+          <!-- <div>
+              <label for="Car">Car</label>
+              <select class="input" name="myCar" id="Car">
+                  <option value="indica">Indica</option>
+                  <option value="swift" selected>Swift</option>
+              </select>
+          </div> -->
+          <div>
+              <input class="input" type="submit" value="Submit Now">
+              <input class="input" type="reset" value="Reset Now">
+          </div>
+</form>
+
+</div>                                                                                         
+</body>
+</html>
